@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- main div open -->
+    <div class="container bg-light border border-dark">
+      <!-- header part -->
+      <div class="row">
+        <div class="col-12 ">
+          <div class="col-6 " id="head"><h1>INVOICE</h1></div>
+          <div class="col-6" style="float: left">
+            <p id="dueamnt">Due Amount-</p>
+            <label for="" id="amountDisplay" style="margin-top: 20px" >Rs.</label>
+          </div>
+        </div>
+      </div>
+      <!-- header part end -->
+
+      <!-- date and address section div -->
+      <div class="row">
+        <div class="col-12" id="noDate">
+          <label for="" id="invoiceNo" style="font-weight: bold;">Invoice No. -</label><br>
+          <label for="" id="invoiceDate" style="font-weight: bold;">Invoice Date -</label>
+        </div>
+      </div>
+
+      <div></div>
+
+      <div class="row">
+        <div class="col-12">
+            <p style="margin-left: 75%;">Comapany Name <br> Address <br> Phone : 9876543210<br> GSTIN : 1234567899876</p>
+        </div>
+      </div>
+
+      <!-- date and address section div end -->
+
+      <!-- bill to and ship to address div -->
+      <div class="row">
+        <div class="col-6" style="height: 17 0px;">
+        <h4 class="h5  border-bottom border-dark ">BILL TO<h4>
+          <p class="font-weight-bold" style="font-size: 15px
+          ;">Company Name</p>
+          <p class="font-weight-normal mt-0 pt-0" style="font-size: 15px
+          ;">Address</p>
+          <p class="font-weight-light" style="font-size: 13px
+          ;">Phone : 9998887776</p>
+          <p class="font-weight-bold" style="font-size: 15px;">GSTIN : 1234567898745632</p>
+        </div>
+        <div class="col-6 ">
+        <h4 class="h5  border-bottom border-dark">SHIP TO </h4>
+        <p class="font-weight-bold" style="font-size: 15px
+        ;">Company Name</p>
+        <p class="font-weight-normal mt-0 pt-0" style="font-size: 15px
+          ;">Address</p>
+          <p class="font-weight-light" style="font-size: 13px
+          ;">Phone : 9876543210</p>
+           <p class="font-weight-bold" style="font-size: 15px;">GSTIN : 1234567898745632</p>
+        
+      </div>
+    </div>
+
+    <!-- bill to and ship to address div end -->
+    <!-- table div start -->
+    <div class="row">
+      <div class="col-12">
+        <table class="table table-bordered">
+          <thead>
+          <tr style="text-align: center;">
+            <th scope="col">SL.NO</th>
+            <th scope="col">DESCRIPTION</th>
+            <th scope="col">HSN NO.</th>
+            <th scope="col">QTY</th>
+            <th scope="col">RATE</th>
+            <th scope="col">AMOUNT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><input type="text" name="" class="form-control" id="" placeholder="Item Name 1"></td>
+            <td><input type="number" name="" class="form-control" id="" value="123" ></td>
+            <td><input type="number" name="" class="form-control" id="qty1" placeholder="Quantity"></td>
+            <td><input type="text" name="" class="form-control" id="rate1" placeholder="Rate"></td>
+            <td><input type="text" name="" class="form-control" id="amount1" placeholder="Amount"></td>
+          </tr> 
+
+          <tr>
+            <td>2</td>
+            <td><input type="text" name="" class="form-control" id="" placeholder="Item Name 2"></td>
+            <td><input type="number" name="" class="form-control" id="" value="124" ></td>
+            <td><input type="number" name="" class="form-control" id="qty2" placeholder="Quantity"></td>
+            <td><input type="text" name="" class="form-control" id="rate2" placeholder="Rate"></td>
+            <td><input type="text" name="" class="form-control" id="amount2" placeholder="Amount"></td>
+          </tr> 
+
+          <tr>
+            <td>3</td>
+            <td><input type="text" name="" class="form-control" id="" placeholder="Item Name 3"></td>
+            <td><input type="number" name="" class="form-control" id="" value="125" ></td>
+            <td><input type="number" name="" class="form-control" id="qty3" placeholder="Quantity"></td>
+            <td><input type="text" name="" class="form-control" id="rate3" placeholder="Rate"></td>
+            <td><input type="text" name="" class="form-control" id="amount3" placeholder="Amount"></td>
+          </tr> 
+
+          <tr>
+            <td>4</td>
+            <td><input type="text" name="" class="form-control" id="" placeholder="Item Name 4"></td>
+            <td><input type="number" name="" class="form-control" id="" value="126" > </td>
+            <td><input type="number" name="" class="form-control" id="qty4" placeholder="Quantity"></td>
+            <td><input type="text" name="" class="form-control" id="rate4" placeholder="Rate"></td>
+            <td><input type="text" name="" class="form-control" id="amount4" placeholder="Amount"></td>
+          </tr> 
+
+          <tr>
+            <td>5</td>
+            <td><input type="text" name="" class="form-control" id="" placeholder="Item Name 5"></td>
+            <td><input type="number" name="" class="form-control" id="" value="127" > </td>
+            <td><input type="number" name="" class="form-control" id="qty5" placeholder="Quantity"></td>
+            <td><input type="text" name="" class="form-control" id="rate5" placeholder="Rate"></td>
+            <td><input type="text" name="" class="form-control" id="amount5" placeholder="Amount"></td>
+          </tr> 
+
+          <tr>
+            <td colspan="5"><input type="button" value="Total" class="btn btn-outline-dark" id="totalAmount"/></td>
+            <td><label for="" style="font-weight: bold;" id="totalLabel">Rs. </label></td>
+          </tr>
+
+          <tr>
+            <td rowspan="4" colspan="2"></td>
+            <td colspan="3" style="text-align: center;font-weight: bold;" >DISCOUNT @ 1%</td>
+            <td><label for="" style="font-weight: bold;" id="discountAmount">Rs.</label></td>
+          </tr>
+
+          <tr>
+           
+            <td colspan="3" style="text-align: center;font-weight: bold;">TAXABLE AMOUNT</td>
+            <td><label for="" style="font-weight: bold;" id="taxableAmount">Rs.</label></td>
+          </tr>
+
+          <tr>
+            
+            <td colspan="3" style="text-align: center;font-weight: bold;">SGST RATE @ 6%  </td>
+            <td><label for="" style="font-weight: bold;" id="stateGst">Rs.</label></td>
+          </tr>
+
+          <tr>
+            <td colspan="3" style="text-align: center;font-weight: bold;">CGST RATE @ 9%  </td>
+            <td><label for="" style="font-weight: bold;" id="centralGst">Rs.</label></td>
+          </tr>
+
+          <tr>
+            <td colspan="5" class="bg-dark text-white" style="font-weight: bold;">PAYABLE AMOUNT</td>
+            <td class="bg-dark text-white" style="font-weight:bold;" id="totalPay"><label for="" >Rs</label></td>
+          </tr>
+
+
+        </tbody>
+        </table>
+
+      </div>
+
+    </div>
+
+    <!-- table div end -->
+    
+    <!-- footer div -->
+    <div class="row">
+      <div class="col-12">
+        <p style="margin-left: 6px; padding-left: 6px;font-weight: bold;">Note - </p>
+        <p style="margin-left: 30px; padding-left: 30px;font-weight: bold;">Pleace include the invoice number in your payment notes. <br>
+        To be paid in full in maximum 7 days after receiving the invoice. </p>
+        <p style="text-align: right; padding-top: 20px; margin-right: 70px; font-weight: bolder;">Authorized Sign.</p>
+        <p style="font-weight: bold; text-align: center;">If you have any quries for this invoice please immediate contact us. <br>
+        [+91 9876543210],abcompany@gmail.com</p>
+        <p class="bg-dark text-white" style="text-align: center; font-weight: bold;">THANK YOU FOR BUSINESS WITH US </p>
+      </div>
+    </div>
+    <!-- footer div end -->
+
+    </div>
+    <!-- main div end -->
+
+    <!-- JavaScript code -->
+    <script src="script.js">
+    </script>
+  </body>
+</html>

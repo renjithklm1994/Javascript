@@ -1,0 +1,27 @@
+#head {
+    /* margin-left: 200px; */
+    padding-left: 20%;
+    /* margin-top: 200px; */
+    float: left;
+}
+
+#dueamnt{
+    /* text-align: end; */
+    margin-left: 45%;
+    font-weight: bolder;
+    margin-top: 20px;
+    float: left;
+}
+
+#amountDisplay{
+    padding-left: 30px;
+    text-align: right;
+    margin-right: 20px;
+    font-weight: bolder;
+}
+
+#noDate {
+    margin-top: 5px;
+    margin-left: 300px;
+
+}
